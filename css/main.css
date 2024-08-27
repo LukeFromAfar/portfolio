@@ -6,15 +6,14 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: rgb(29, 29, 29);
     font-family: Poppins;
 }
 
 nav {
     display: flex;
     list-style-type: none;
-    background-color: black;
-    filter: drop-shadow(0px 0px 10px yellow);
+    background-color: transparent;
     /* border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em; */
     justify-content: center;
@@ -22,15 +21,47 @@ nav {
 }
 
 nav:hover {
-    filter: drop-shadow(0px 0px 30px yellow);
     transition-duration: 0.2s;
 }
 
 .navItem {
-    color: yellow;
+    color: rgb(255, 255, 255);
     padding: 1em;
     padding-left: 2em;
     padding-right: 2em;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
 }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, calc(100vw / 10));
+    grid-column-gap: 2em;
+    grid-row-gap: 2em; 
+    padding: 2em;
+}
+
+.div1, .div2, .div3, .div4, .div5, .div6 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 2em;
+    
+    transition: transform 0.2s ease, margin 0.2s ease;
+}
+
+.div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover {
+    transform: scale(1.02); /* Slightly scale the element */
+    margin: -0.25em; /* Negative margin to reduce gap */
+}
+
+/* .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover {
+    min-height: 10em;
+} */
+
+.div1 { grid-area: 1 / 1 / 2 / 9; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 2 / 2 / 3 / 9; }
+.div4 { grid-area: 3 / 1 / 4 / 6; }
+.div5 { grid-area: 3 / 6 / 4 / 9; }
+.div6 { grid-area: 4 / 1 / 5 / 9; }
+
