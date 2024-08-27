@@ -25,7 +25,7 @@ nav:hover {
 }
 
 .navItem {
-    color: rgb(210, 210, 210);
+    color: rgb(158, 158, 158);
     padding: 1em;
     padding-left: 2em;
     padding-right: 2em;
@@ -33,19 +33,25 @@ nav:hover {
     font-size: 1em;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
 .parent {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, calc(100vw / 10));
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 2em;
     grid-row-gap: 2em; 
     padding: 2em;
+    width: 70%;
 }
 
 .div1, .div2, .div3, .div4, .div5, .div6 {
     background-color: rgb(255, 255, 255);
     border-radius: 2em;
-    
+    min-height: 8em;
     transition: transform 0.2s ease, margin 0.2s ease;
 }
 
