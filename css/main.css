@@ -63,8 +63,9 @@ header {
 }
 
 .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover {
-    transform: scale(1.02); /* Slightly scale the element */
-    margin: -0.25em; /* Negative margin to reduce gap */
+    transform: scale(1.02);
+    margin: -0.25em;
+    filter: drop-shadow(0px 0px 0.3em #9b9b9b);
 }
 
 /* .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover {
