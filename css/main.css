@@ -1,13 +1,17 @@
 @font-face {
     font-family: Poppins;
-    src: url(../font/Poppins-Regular.ttf);
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Playfair_Display;
+    src: url(../font/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
 }
 
 body {
     margin: 0px;
     padding: 0px;
     background-color: rgb(29, 29, 29);
-    font-family: Poppins;
 }
 
 nav {
@@ -31,10 +35,26 @@ nav:hover {
     padding-right: 2em;
     text-decoration: none;
     font-size: 1em;
+    font-family: Poppins;
+}
+
+.headerText {
+    display: flex;
+    width: 70%;
+    
 }
 
 h1 {
     color: #ffffff;
+    font-family: Playfair_Display;
+    font-size: 5em;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: Poppins;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 header {
@@ -52,7 +72,7 @@ header {
     grid-column-gap: 2em;
     grid-row-gap: 2em; 
     padding: 2em;
-    width: 70%;
+    width: 80%;
 }
 
 .div1, .div2, .div3, .div4, .div5, .div6 {
