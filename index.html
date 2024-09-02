@@ -8,32 +8,35 @@
 </head>
 <body>
     <nav>
-        <a class="navItem" href="">Hjem</a>
+        <a class="navItem active" href="./index.html">Hjem</a>
         <a class="navItem" href="./html/aboutMe.html">Om meg</a>
         <a class="navItem" href="">Ferdigheter</a>
         <a class="navItem" href="">Kontakt</a>
     </nav>
     <header>
         <div class="headerText">
-            <h1>&lt;Lukasz<br>Brzozowski&gt;</h1>
+            <h1 class="heroTitle" data-value="<Lukasz>">&lt;Lukasz&gt;</h1>
+            <h1 class="heroTitle" data-value="<Brzozowski>">&lt;Brzozowski&gt;</h1>
+
             <h2>Jeg er en IT-interessert elev på videregående som alltid er nysgjerrig på ny teknologi og trender. Jeg liker å lære om alt fra koding til maskinvare, og jeg elsker å finne kreative løsninger på tekniske utfordringer. Målet mitt er å bygge en solid grunnlag i IT for fremtidige studier eller karriere.</h2>
         </div>
         <div class="parent">
             <div class="div1">
                     <img id="VisitOslo" src="./img/VisitOsloInstagram2.png" alt="Poster Bilde" onclick="showImage(this.src)">
             </div>
-            <div class="div2"><a href="">2</a> </div>
-            <div class="div3"><a href="">3</a> </div>
-            <div class="div4"><a href="">4</a> </div>
-            <div class="div5"><a href="">5</a> </div>
+            <div class="div2"><a class="taskText" href="">Quiz</a> </div>
+            <div class="div3"><a class="taskText" href="">Huskeliste</a> </div>
+            <div class="div4"><a class="taskText" href="">Bruker</a> </div>
+            <div class="div5"><a class="taskText" href="">API</a> </div>
             <a class="div6" href="./html/aboutMe.html">
                 <img id="LukaszHeader" src="./img/LukaszBilde.jpg" alt="Lukasz">
             </a>
-            <div class="div7"><a href="">7</a> </div>
-            <div class="div8"><a href="">8</a> </div>
-            <div class="div9"><a href="">9</a> </div> 
+            <div class="div7"><a class="taskText" href="">7</a> </div>
+            <div class="div8"><a class="taskText" href="">8</a> </div>
+            <div class="div9"><a class="taskText" href="">9</a> </div> 
         </div> 
     </header>
-    <script src="./js/imageOpen.js"></script>
+    <script src="./js/imageOpen.js" defer></script>
+    <script src="./js/hackerText.js" defer></script>
 </body>
 </html>

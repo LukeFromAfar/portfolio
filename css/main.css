@@ -49,6 +49,10 @@ nav:hover {
     transition: 0.2s;
 }
 
+.active {
+    color: white;
+}
+
 .headerText {
     display: flex;
     width: 70%;
@@ -97,7 +101,8 @@ header {
     border-radius: 2em;
     min-height: 4em;
     transition: transform 0.2s ease, margin 0.2s ease;
-    display: inline-block;
+    display: flex;
+   align-items: center;
 }
 
 .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover, .div7:hover, .div8:hover, .div9:hover {
@@ -176,4 +181,14 @@ header {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
+}
+
+.taskText {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: Poppins;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
 }
