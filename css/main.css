@@ -8,6 +8,32 @@
     src: url(../font/Playfair_Display/static/PlayfairDisplay-Regular.ttf);
 }
 
+@font-face {
+    font-family: Space_Mono;
+    src: url(../font/Space_Mono/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Space_Mono_Bold;
+    src: url(../font/Space_Mono/SpaceMono-Bold.ttf);
+}
+
+:root {
+    /* Rules */
+    font-variant-ligatures: none;
+
+    /* Fonts */
+    --Poppins: Poppins;
+    --Playfair_Display: Playfair_Display;
+    --Space_Mono: Space_Mono;
+    --Space_Mono_Bold: Space_Mono_Bold;
+
+    /* Colors */
+    --white: #ffffff;
+    --background: rgb(29, 29, 29);
+    
+}
+
 html {
     height: 100%;
     width: 100%;
@@ -16,7 +42,7 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-    background-color: rgb(29, 29, 29);
+    background-color: var(--background);
     height: 100%;
     width: 100%;
 }
@@ -56,20 +82,21 @@ nav:hover {
 .headerText {
     display: flex;
     width: 70%;
-    
+    flex-direction: column;
 }
 
 h1 {
     color: #ffffff;
-    font-family: Playfair_Display;
+    font-family: var(--Space_Mono_Bold);
     font-size: 5em;
-    margin-top:  0.5em;
+    margin-top:  0.2em;
+    margin-bottom: 0.2em;
     padding-right: 1em;
 }
 
 h2 {
     color: #ffffff;
-    font-family: Playfair_Display;
+    font-family: var(--Space_Mono);
     font-size: 1.5em;
     margin-top:  2.5em;
 }
@@ -84,8 +111,8 @@ header {
 .parent {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(8, 100px);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 2em;
     grid-row-gap: 2em; 
     gap: 2em;
