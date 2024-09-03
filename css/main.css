@@ -124,15 +124,21 @@ header {
 }
 
 .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9 {
+    /* background: rgb(42,42,42); */
+    transition: 0.2s;
+    background: linear-gradient(0deg, rgba(42,42,42,1) 0%, rgba(139,139,139,1) 100%);
     background-color: rgba(168, 168, 168, 0.476);
     border-radius: 2em;
     min-height: 4em;
     transition: transform 0.2s ease, margin 0.2s ease;
     display: flex;
-   align-items: center;
+    align-items: center;
 }
 
 .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover, .div7:hover, .div8:hover, .div9:hover {
+    transition: 0.2s;
+    background: rgb(89,89,89);
+    background: linear-gradient(0deg, rgba(89,89,89,1) 0%, rgba(176,176,176,1) 100%);
     transform: scale(1.02);
     margin: -0.25em;
     filter: drop-shadow(0px 0px 0.3em #9b9b9b);
