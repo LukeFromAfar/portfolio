@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="./CSS/pc.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="./CSS/phone.css">
+
+    <script src="./JavaScript/login.js" defer></script>
+    <title>Oprett bruker</title>
+</head>
+<body>
+    <div id="background">
+        <h3 class="letterC">C</h3>
+        <div id="centerContainer">
+            <div id="lagBrukerFormContainer">
+                <h1>Logg inn</h1>
+                <form action="" method="post" id="lagBrukerForm">
+                    <!-- <label for="emailCheck">Epost</label> -->
+                    <input id="emailCheck" type="email" placeholder="Email">
+                    <!-- <label for="passordCheck">Passord</label> -->
+                    <input id="passwordCheck" type="password" placeholder="Password">
+                </form>
+                <div class="videre">
+                    <button class="buttonLogin" onclick="handleLogin()">Logg inn</button>
+                    <p>Har ikke en bruker ennå? <a id="alleredeBruker" href="./HTML/lageBruker.html">Ny bruker</a></p>
+                </div>
+                <div id="wrongEmPs">
+                    <p class="feilTekst">Feil epost eller passord</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+</body>
+</html>

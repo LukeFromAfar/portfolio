@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="../CSS/pc.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="../CSS/phone.css">
+
+    <script src="../JavaScript/signin.js" defer></script>
+    <title>Inlogging</title>
+</head>
+<body>
+    <div id="background">
+        <h3 class="letterC">C</h3>
+        <div id="centerContainer">
+            <div id="lagBrukerFormContainer">
+                <h1>Oprett bruker</h1>
+                <form action="" id="lagBrukerForm">
+                    <!-- <label for="email">Email</label> -->
+                    <input id="email" type="email" placeholder="Email">
+                    <!-- <label for="nyttPassord1">Passord</label> -->
+                    <input id="nyttPassord1" type="password" placeholder="Passord">
+                    <!-- <label for="nyttPassord2">Gjenta Passord</label> -->
+                    <input id="nyttPassord2" type="password" placeholder="Gjenta passord">
+                </form>
+                <div class="videre">
+                    <button class="buttonLogin" onClick="handleSubmit()">Oprett bruker</button>
+                    <a id="alleredeBruker" href="../index.html">Allerede en bruker?</a>
+                </div>
+                <div id="wrongLength">
+                    <p class="feilTekst">Ikke langt nok passord</p>
+                </div>
+                
+                <div id="wrongPassword">
+                    <p class="feilTekst">Ikke samme passord</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

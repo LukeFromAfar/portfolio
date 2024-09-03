@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/quotegenerator.css">
+  <title>Quote Generator</title>
+</head>
+<body>
+
+  <div id="center-ct">
+    <img id="smileyImg" src="../img/SmileyNoBG.png" alt="Smiley">
+    <h1>Motivational Quote</h1>
+    <form id="categoryInput">
+      <input id="categoryInputField" list="categoryList" pattern="age|alone|amazing|anger|architecture|art|attitude|beauty|death|dating|food|health|intelligence|love|money|history" type="text" placeholder="category">
+      <datalist id="categoryList">
+        <option value="age">
+        <option value="alone">
+        <option value="amazing">
+        <option value="anger">
+        <option value="architecture">
+        <option value="art">
+        <option value="attitude">
+        <option value="beauty">
+        <option value="death">
+        <option value="dating">
+        <option value="food">
+        <option value="health">
+        <option value="intelligence">
+        <option value="love">
+        <option value="money">
+        <option value="history">
+      </datalist>
+    </form>
+    <button id="generateButton">Generate</button>
+    <p id="quote-ct"></p>
+    <p id="author-ct"></p>
+  </div>
+  
+  <script src="../js/quotegenerator.js"></script>
+</body>
+</html>

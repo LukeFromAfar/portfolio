@@ -1,0 +1,102 @@
+:root {
+    --whiteText: #ffffff;
+    --blackText: #000000;
+}
+
+
+@font-face {
+    font-family: Jura;
+    src: url(../font/Jura/static/Jura-Light.ttf);
+}
+
+@font-face {
+    font-family: MajorMono;
+    src: url(../font/Major_Mono_Display/MajorMonoDisplay-Regular.ttf);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: var(--blackText);
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: Jura;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-none {
+    display: none;
+}
+
+#forecastContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(149, 149, 255);
+    min-width: min-content;
+    height: auto;
+    width: 20em;
+    padding: 2em;
+    border-radius: 2em;
+    padding-bottom: 90px;
+}
+
+#cityForm {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#cityForm input {
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+}
+
+h4 {
+    font-family: Jura;
+    font-size: 1.3em;
+}
+
+h5 {
+    font-family: Jura;
+    font-size: 1.4em;
+}
+
+.majorMonoFont {
+    font-family: MajorMono;
+    font-size: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.timeImg {
+    width: 15em;
+    height: 100%;
+}
+
+.temperature {
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 0px;
+}
+
+.weatherIcon {
+    border-radius: 50%;
+    position: relative;
+    bottom: 60px;
+    margin-bottom: -110px;
+}

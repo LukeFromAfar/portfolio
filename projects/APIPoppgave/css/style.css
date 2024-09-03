@@ -1,0 +1,35 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#menuBar {
+    background-color: darkgray;
+    padding: 2em;
+    border-radius: 1em;
+
+}
+
+h1 {
+    font-size: 3em;
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    font-size: 2em;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    margin: 0px 2em;
+}
+
+a:hover {
+    color: lightgray;
+}

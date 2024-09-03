@@ -1,0 +1,89 @@
+@font-face {
+    font-family: MonsseratMedium;
+    src: url(../Font/Montserrat-Medium.ttf);
+}
+
+body {
+    background-image: url(../Images/mountainImageBetter.png);
+    background-position: center;
+    background-size: 600vw;
+    background-repeat: no-repeat;
+    font-family: MonsseratMedium;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4vh;
+}
+
+h3 {
+    font-size: 20vh;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.feilTekst {
+    text-align: center;
+}
+
+#centerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#lagBrukerFormContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    
+}
+
+.buttonLogin {
+    color: white;
+    background-color: rgb(80, 211, 255);
+    border-color: transparent;
+    height: 5vh;
+    width: 60vw;
+    border-radius: 50%/250%;
+    padding: 0;
+    border: 0;
+    justify-content: center;
+    font-size: 2.5vh;
+    
+}
+
+.videre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#alleredeBruker {
+    padding: 20px;
+    color: white;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    height: 5vh;
+}
+
+::placeholder {
+    color: white;
+}
+
+#lagBrukerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
