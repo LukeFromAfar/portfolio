@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat/static/Montserrat-Light.ttf);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+#centerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#question {
+    padding: 2em;
+    padding-bottom: 0px;
+}
+
+#quizContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(187, 187, 248);
+    width: max-content;
+    height: min-content;
+    min-width: 300px;
+    border-radius: 50px;
+    box-shadow:  29px 29px 40px #a2a2a2a0;
+}
+
+#nameInput {
+    display: inline-block;
+    margin: 20px;
+    border: none;
+    font-family: Montserrat;
+    font-size: 2em;
+    border-radius: 0.1em;
+}
+
+#nameInput:focus {
+    outline: none;
+    background-color: #ddd7ff;
+}
+
+button {
+    font-family: Montserrat;
+    padding: 0.5em;
+    border: 0px;
+    transition-duration: 0.2s;
+    border-radius: .5em;
+}
+
+button:hover {
+    background-color: #b5b5b5;
+    color: white;
+}
+
+#startQuiz {
+    margin: 2em;
+    transition-duration: 0.2s;
+    font-size: 1em;
+}
+
+#nextQuestion {
+    margin: 2em;
+    transition-duration: 0.2s;
+    width: max-content;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+#alternatives {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+#startQuiz:hover {
+    background-color: #b5b5b5;
+    color: white;
+}
+
+#nextQuestion:hover {
+    background-color: #b5b5b5;
+    color: white;
+    border: 0px;
+}
+
+#a, #b, #c, #d {
+    margin: 0.5em;
+    padding: 1em;
+    font-size: 1em;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn ease-in 0.2s;
+    animation-fill-mode: forwards;
+}

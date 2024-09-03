@@ -1,0 +1,105 @@
+:root {
+    --blue: rgb(94, 94, 181);
+    --darkBlue: rgb(97, 97, 242);
+    --lightBlue: rgb(198, 198, 255);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: Poppins;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    padding: 4vw;
+    padding-top: 3vh;
+    text-align: center;
+}
+
+p {
+    display: inline-block;
+    background-color: var(--darkBlue);
+    color: white;
+    border-radius: 0.5em;
+    padding: 1em;
+    width: 60vw;
+    text-align: center;
+
+}
+
+#notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+}
+
+#inputButtonContainer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    bottom: 10vh;
+    z-index: 0;
+}
+
+#inputButton {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    border-radius: 0.5em;
+}
+
+#notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#rectangle {
+    /* background-color: rgb(255, 255, 255); */
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    position: fixed;
+    height: 30vh;
+    width: 100vw;
+    z-index: 0;
+    bottom: 0px;
+
+}
+
+#inputField {
+    margin-left: 6vw;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    font-family: Poppins;
+    width: 50vw;
+}
+
+#inputField:focus {
+    outline: none;
+}
+
+#inputField::placeholder {
+    color: var(--lightBlue);
+}
+
+#sendButton {
+    border: none;
+    border-radius: 5%;
+    background-color: transparent;
+}
+
+#checkMark {
+    filter: invert(1);
+    height: 3em;
+    padding: 0.5em;
+}

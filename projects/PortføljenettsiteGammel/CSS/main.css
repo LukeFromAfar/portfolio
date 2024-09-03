@@ -1,0 +1,416 @@
+:root {
+    --bgColor: black;
+}
+
+body{
+    background-color: var(--bgColor);
+    background-image: url(../img/bakgrunn.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style av tekst */
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 50px;
+    padding-left: 50px;
+    margin: 0px;
+    margin-top: 15vh;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 40px;
+    padding: 50px;
+    margin: 0px;
+    width: 50%;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 50px;
+    margin: 0px;
+    width: 50vw;
+}
+
+a:hover {
+    color:#666666
+}
+
+#framtiden {
+    width: 70vw;
+}
+
+/* Lister */
+
+ul {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-left: 70px;
+    padding-top: 50px;
+    margin-right: 20px;
+}
+
+ul li {
+    margin-bottom: 200px;
+}
+
+.jobbliste li{
+    padding-bottom: 50px;
+    inline-size: 40vw;
+    overflow-wrap: break-word;
+}
+
+a.email,a.arbeidslink{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+a.arbeidslink:hover {
+    color: #666666
+}
+
+/* Tabell for utdanning */
+
+table {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+table a {
+    color: rgb(255, 255, 255);
+}
+
+td{
+    padding-top: 20px;
+}
+
+/* Frontpage Bilde */
+.frontpageimg {
+    width: 15em; 
+    float: right;
+    margin-bottom: 5vh;
+    margin-right: 8vw;
+    margin-left: 10vw;
+    margin-top: 2vh;
+    border-radius: 10%;
+    max-width: 100%;
+
+}
+
+/* bilde til jobb */
+
+.jobbilde {  
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.jobbilde:hover {
+    outline: 10px solid #666666;
+}
+
+.bilde1 {
+    width: 25%;
+    position: absolute;
+    top: 350px;
+    right: 10vw;
+}
+
+.bilde:hover {
+    border: 20px;
+    border-color: #666666;
+}
+
+.bilde2 {
+    width: 35%;
+    position: absolute;
+    top: 990px;
+    right: 5vw;
+}
+
+.bilde3 {
+    width: 35%;
+    position: absolute;
+    top: 1470px;
+    right: 7vw;
+    padding: 0px;
+}
+
+/* Navbar */
+
+.topnav{
+    background-color: #333333;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 200px;
+    z-index: 999;
+}
+
+.topnav a{
+    font-family: 'Raleway', sans-serif;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.topnav a:hover{
+    background-color: #dddddd;
+    color: black;
+}
+
+.active{
+    background-color: #505050;
+
+}
+
+.topnav a.logo{
+    padding: 10px;
+}
+
+/* Fargen på markering av tekst */
+
+::selection{
+    color: rgb(255, 255, 255);
+    background: rgb(82, 82, 82);
+}
+
+/* Kontaktskjema */
+
+form{
+    background-color: rgba(255, 255, 255, 0.097);
+    text-align: center;
+    width: min-content;
+    height: max-content;
+    padding: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    overflow: clip;
+}
+
+input, textarea{
+    text-align: center;
+    border: 0px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(221, 221, 221);
+    outline: 2px solid white;
+}
+
+.formparts {
+    width:min-content;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+input {
+    border-radius: 5px;
+    width: 230px;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    min-width: 15em;
+    min-height: 12em;
+}
+
+label, button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    background-color: rgba(134, 134, 134, 0.5);
+    border: 0px;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    outline: 2px solid rgba(255, 255, 255);
+}
+
+button:hover {
+    background-color: rgb(134, 134, 134, 0.8);
+}
+
+::placeholder {
+    color: rgb(163, 163, 163);
+}
+
+/* Drop down teks i "Mine hobbyer" */
+
+section {
+    margin-top: 56px;
+}
+
+.collapsible {
+    background-color: rgba(74, 74, 74, 0.9);
+    color: white;
+    cursor: pointer;
+    padding: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    text-align: left;
+    outline: none;
+    font-size: 40px;
+    height:fit-content;
+    outline: rgba(255, 255, 255, 0.5) solid 2px;
+}
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgba(241, 241, 241, 0.2);
+    width:auto;
+}
+
+.content a {
+    color: white;
+}
+
+.content a:hover {
+    color: #919191;
+}
+
+.contenttext {
+    display: inline-block;
+    font-size: 20px;
+    
+}
+
+#davinci {
+    width: 25vw;
+    float: right;
+    padding-bottom: 80px;
+    padding-right: 50px;
+    padding-top: 80px;
+}
+
+#simrig {
+    width: 20vw;
+    float: right;
+    padding-bottom: 80px;
+    padding-right: 50px;
+    padding-top: 80px;
+}
+
+#cod {
+    width: 25vw;
+    float: right;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+#friends {
+    width: 25vw;
+    float: right;
+    padding-bottom: 80px;
+    padding-right: 50px;
+    padding-top: 80px;
+}
+
+.centerGallery {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+#bildegalleri {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10vh;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 20%;
+    overflow-x: scroll;
+}
+
+
+
+
+
+/* Footer */
+
+footer{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    font-size: 16px;
+    margin-top: auto;
+    padding: 15px;
+    text-align: center;
+    outline: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.footername {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+footer a{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    font-size: 16px;
+    padding-right: 100px;
+    
+}
+
+@media screen and (max-width: 1000px) {
+
+    .topnav a{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .frontpageimg {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 70vw;
+    }
+
+}
+
