@@ -189,6 +189,12 @@ header {
     cursor: pointer;
 }
 
+.headerImages {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+
 #LukaszHeader {
     width: 100%;
     height: 100%;
@@ -196,10 +202,10 @@ header {
     border-radius: 2em;
 }
 
-.image-thumbnail {
+/* .image-thumbnail {
     width: 200px;
     cursor: pointer;
-}
+} */
 
 /* Overlay styles */
 .image-overlay {
@@ -217,19 +223,30 @@ header {
 
 /* Container for the enlarged image */
 .image-container {
-    max-height: 80%; /* Half of the viewport height */
-    width: 80vmin;
-    height: 80vmin; 
-    display: flex;
-    justify-content: center;
+    display: inline-block;  /* Use inline-block to fit snugly */
+    border-radius: 1em;
 }
 
-/* Enlarged image styles */
 .image-container img {
+    width: 70vmin;
+    height: auto;
+    border-radius: 2em;
+}
+
+/* Video container for 16:9 aspect ratio */
+.video-container {
+    position: relative;
+    width: calc(100vw - 100px);  /* Width of the container relative to viewport */
+    max-height: 80vmin;  /* Max width of the video */
+    aspect-ratio: 16/9;  /* Maintain 16:9 aspect ratio */
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.video-container iframe {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 2em;
+    border-radius: 1em;
 }
 
 /* Close button styles */
@@ -243,6 +260,12 @@ header {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
+    font-family: var(--Poppins);
+}
+
+.enlargedOslo {
+    width: 70vmin;
+    height: auto;
 }
 
 .taskText {
@@ -256,6 +279,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 /* Drop down in about me */

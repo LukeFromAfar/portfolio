@@ -1,20 +1,36 @@
-function showImage(src) {
-    const imageHtml = `
-        <div class="image-overlay" onclick="closeImage()">
-            <div class="image-container" onclick="event.stopPropagation()">
-                <img src="${src}" alt="Enlarged Image">
-                <button class="close-image-button" onclick="closeImage()">Close</button>
-            </div>
-        </div>`;
+function showMedia(src, type) {
+    let mediaHtml;
+
+    if (type === 'video') {
+        mediaHtml = `
+            <div class="image-overlay" onclick="closeMedia()">
+                <div class="video-container" onclick="event.stopPropagation()">
+                    <iframe width="100%" height="100%" src="${src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <button class="close-image-button" onclick="closeMedia(event)">Close</button>
+                </div>
+            </div>`;
+    } else if (type === 'image') {
+        mediaHtml = `
+            <div class="image-overlay" onclick="closeMedia()">
+                <div class="image-container" onclick="event.stopPropagation()">
+                    <img class="enlargedOslo" src="${src}" alt="Enlarged Image">
+                    <button class="close-image-button" onclick="closeMedia(event)">Close</button>
+                </div>
+            </div>`;
+    }
+
     const overlay = document.createElement('div');
-    overlay.id = 'imageOverlay';
-    overlay.innerHTML = imageHtml;
+    overlay.id = 'mediaOverlay';
+    overlay.innerHTML = mediaHtml;
     document.body.appendChild(overlay);
     document.body.style.overflow = 'hidden';  // Disable scroll on the body
 }
 
-function closeImage() {
-    const overlay = document.getElementById('imageOverlay');
+function closeMedia(event) {
+    if (event) {
+        event.stopPropagation();  // Prevent the event from bubbling up to the overlay
+    }
+    const overlay = document.getElementById('mediaOverlay');
     if (overlay) {
         document.body.removeChild(overlay);
         document.body.style.overflow = 'auto';  // Re-enable scroll on the body
