@@ -38,6 +38,7 @@
 html {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -59,6 +60,7 @@ nav {
     top: 0;
     width: 100%; 
     transition: top 0.3s;
+    z-index: 1001;
 }
 
 nav:hover {
@@ -456,21 +458,73 @@ section {
         font-size: 16px; /* Juster tekststørrelse om nødvendig */
     }
     
-    .navbar {
-        /* Gjør navbaren tilpasset mobilskjermstørrelse */
-        display: block;
-        /* Endre layout eller navigasjon for mindre skjermer */
+    h1 {
+        font-size: 2.2em;
+        margin-left: -0.5em;
     }
 
-    .container {
-        padding: 10px; /* Reduser padding for å utnytte plassen bedre */
+    .navItem {
+        font-size: 0.8em;
     }
 
-    .column {
-        width: 100%; /* Endre kolonnebredden for å passe til mobilskjermer */
-        margin-bottom: 10px;
+    .collapsible {
+        font-size: 2em;
+    }
+
+    #contactList{
+        flex-direction: column;
+        align-items: start;
+        
+    }
+
+    .contactList {
+        margin-bottom: 0px;
+    }
+
+    #downloadCVbutton {
+        align-items: center;
+    }
+
+    #contactList p, #contactList a {
+        font-size: 0.8em;
+    }
+
+    #downloadCVbutton{
+        font-size: 1.6em !important;
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .collapsible {
+        font-size: 1.6em;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;  /* Single column layout */
+        grid-gap: 1em;  /* Space between grid items */
+        width: 100%;  /* Full width on mobile */
+    }
+
+    /* Remove complex grid-area rules for mobile */
+    .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9 {
+        grid-column: 1 / -1;  /* Ensure each div spans full width */
+        grid-row: auto;  /* Let items stack naturally */
+        width: 100%;  /* Full width */
+        height: 3em;
+    }
+
+    .taskText {
+        font-size: 1.2em;  /* Adjust font size for mobile */
+    }
+
+    /* Adjust play icon size for videos */
+    .play-icon {
+        width: 15%;  /* Smaller play icon */
     }
 }
+
 
 @media (max-width: 1024px) and (min-width: 769px) {
     /* Tilpass stiler for nettbrett og små skjermer */
