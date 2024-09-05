@@ -153,7 +153,6 @@ header {
 }
 
 .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9 {
-    /* background: rgb(42,42,42); */
     transition: 0.2s;
     background-color: var(--items);
     border-radius: 2em;
@@ -329,7 +328,7 @@ section {
 }
 
 .collapsible {
-    background-color: var(--background);
+    background-color: var(--items);
     color: white;
     cursor: pointer;
     padding: 40px;
@@ -340,9 +339,9 @@ section {
     outline: none;
     font-size: 40px;
     height:fit-content;
-    outline: rgba(166, 166, 166, 0.5) solid 2px;
     border-radius: 1em;
     transition: 0.2s;
+    margin-top: 1em;
    
 }
 .collapsible:hover {
@@ -368,6 +367,8 @@ section {
 .content a:hover {
     color: var(--background);
 }
+
+/* Contact me page */
 
 .contenttext {
     display: inline-block;
@@ -404,6 +405,32 @@ section {
     transition: 0.2s;
     background: rgb(134, 134, 134);
     transform: scale(1.05);
-    
+    filter: drop-shadow(0px 0px 0.5em #9b9b9b);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    gap: 2em;
+    padding: 5% 10%;
+    margin-top: 3em;
+}
+
+.skill-box {
+    background-color: var(--items);
+    font-family: var(--Poppins);
+    color: white;
+    border-radius: 1em;
+    padding: 1.2em;
+    text-align: center;
+    font-size: 1.2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-box:hover {
+    transition: 0.2s;
+    background: rgb(134, 134, 134);
+    transform: scale(1.05);
     filter: drop-shadow(0px 0px 0.5em #9b9b9b);
 }
