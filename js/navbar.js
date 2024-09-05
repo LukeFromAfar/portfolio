@@ -39,7 +39,7 @@
 // });
 
 let prevScrollpos = window.scrollY;
-const smallScreenWidth = 1000; // Define the screen width threshold for very small devices
+const smallScreenWidth = 768; // Define the screen width threshold for very small devices
 
 window.onscroll = function() {
     const currentScrollPos = window.scrollY;
