@@ -440,3 +440,52 @@ section {
     transform: scale(1.05);
     filter: drop-shadow(0px 0px 0.5em #9b9b9b);
 }
+
+
+/* WARNING - ENTERING MEDIA QUERY TERRITORY */
+
+/* KEEP OUT IF NOT PERMITTED */
+
+/* STRUCTURAL INTEGRITY OF WHOLE WEBSITE AND MY GRADE REST UPON THIS */
+
+/* FINAL WARNING - DO NOT ENTER IF NOT NEEDED */
+
+@media (max-width: 768px) {
+    /* Tilpass stiler for mobilskjermer */
+    body {
+        font-size: 16px; /* Juster tekststørrelse om nødvendig */
+    }
+    
+    .navbar {
+        /* Gjør navbaren tilpasset mobilskjermstørrelse */
+        display: block;
+        /* Endre layout eller navigasjon for mindre skjermer */
+    }
+
+    .container {
+        padding: 10px; /* Reduser padding for å utnytte plassen bedre */
+    }
+
+    .column {
+        width: 100%; /* Endre kolonnebredden for å passe til mobilskjermer */
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    /* Tilpass stiler for nettbrett og små skjermer */
+    .navbar {
+        /* Juster navbaren for å passe til nettbrettskjermstørrelse */
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container {
+        padding: 20px; /* Juster padding for å gi litt mer plass på større skjermer */
+    }
+
+    .column {
+        width: 50%; /* Endre kolonnebredden for å passe til nettbrettskjermer */
+        margin-bottom: 20px;
+    }
+}
