@@ -1,22 +1,39 @@
-var prevScrollpos = window.scrollY;
-
+let prevScrollpos = window.scrollY;
 window.onscroll = function() {
-    var currentScrollPos = window.scrollY;
-    var nav = document.getElementById("nav");
+    const currentScrollPos = window.scrollY;
+    const nav = document.getElementById("nav");
 
-    // Change navbar color based on scroll position
-    if (currentScrollPos > 0) {
-        nav.classList.add("scrolled");
+    // Check if the page is scrollable
+    if (document.body.scrollHeight > window.innerHeight) {
+        // Page is scrollable
+        if (currentScrollPos > 0) {
+            nav.classList.add("scrolled");
+        } else {
+            nav.classList.remove("scrolled");
+        }
+
+        // Show/hide navbar based on scroll direction
+        if (prevScrollpos > currentScrollPos) {
+            nav.style.top = "0";
+        } else {
+            nav.style.top = "-70px"; // Adjust based on your navbar height
+        }
     } else {
-        nav.classList.remove("scrolled");
-    }
-
-    // Show/hide navbar based on scroll direction
-    if (prevScrollpos > currentScrollPos) {
+        // Page is not scrollable, ensure navbar is visible
         nav.style.top = "0";
-    } else {
-        nav.style.top = "-70px";
+        nav.classList.remove("scrolled");
     }
 
     prevScrollpos = currentScrollPos;
 };
+
+// Check navbar visibility on resize
+window.addEventListener('resize', () => {
+    const nav = document.getElementById("nav");
+
+    if (document.body.scrollHeight <= window.innerHeight) {
+        // Page is not scrollable
+        nav.style.top = "0";
+        nav.classList.remove("scrolled");
+    }
+});

@@ -329,7 +329,7 @@ section {
 
 .collapsible {
     background-color: var(--items);
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     padding: 40px;
     width: 100%;
@@ -341,13 +341,17 @@ section {
     height:fit-content;
     border-radius: 1em;
     transition: 0.2s;
-    margin-top: 1em;
-   
+    margin-top: 0.5em;
+   font-family: var(--Space_Mono);
 }
 .collapsible:hover {
     background-color: #555;
     filter: drop-shadow(0px 0px 0.5em #9b9b9b);
-    transition: 0.2s;
+    transition: 0.4s;
+}
+
+.openAbout {
+    border-radius: 1em 1em 0px 0px;
 }
 
 .content {
@@ -355,17 +359,18 @@ section {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: var(--white);
-    width:auto;
-    border-radius: 1em;
+    background-color: rgb(200, 200, 200);
+    width: auto;
+    border-radius: 0px 0px 2em 2em;
+    margin-bottom: 2em;
 }
 
 .content a {
-    color: white;
+    color: var(--background);
 }
 
 .content a:hover {
-    color: var(--background);
+    color: rgb(175, 175, 175);
 }
 
 /* Contact me page */
@@ -373,7 +378,7 @@ section {
 .contenttext {
     display: inline-block;
     font-size: 20px;
-    
+    font-family: var(--Poppins);
 }
 
 #contactList {
@@ -385,6 +390,7 @@ section {
 .contactList,.contactList a{
     font-family: var(--Poppins);
     color: var(--white);
+    font-size: 20px;
 }
 
 #downloadCVbutton {
@@ -396,7 +402,7 @@ section {
     cursor: pointer;
     height: min-content;
     transition: 0.2s;
-    border-radius: 2em;
+    border-radius: 1em;
     transition: transform 0.2s ease, margin 0.2s ease;
     text-decoration: none;
 }
