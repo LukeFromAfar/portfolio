@@ -9,7 +9,7 @@ function handleLogin() {
 
     if(localStorage.getItem("userPassword") === loginPassword && localStorage.getItem("userEmail") === loginEmail) {
         console.log("logget inn");
-        window.location.href="http://127.0.0.1:5500/HTML/velkommen.html"
+        window.location.href="http://127.0.0.1:5500/projects/OprettBruker/HTML/velkommen.html"
     }   
     else{
 
