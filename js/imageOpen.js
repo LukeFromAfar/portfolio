@@ -24,6 +24,9 @@ function showMedia(src, type) {
     overlay.innerHTML = mediaHtml;
     document.body.appendChild(overlay);
     document.body.style.overflow = 'hidden';  // Disable scroll on the body
+
+    // Add event listener for "Esc" key to close media
+    document.addEventListener('keydown', handleEscKey);
 }
 
 function closeMedia(event) {
@@ -34,5 +37,15 @@ function closeMedia(event) {
     if (overlay) {
         document.body.removeChild(overlay);
         document.body.style.overflow = 'auto';  // Re-enable scroll on the body
+
+        // Remove the "Esc" key event listener when the media is closed
+        document.removeEventListener('keydown', handleEscKey);
+    }
+}
+
+// Function to handle "Esc" key press
+function handleEscKey(event) {
+    if (event.key === 'Escape') {
+        closeMedia();
     }
 }
